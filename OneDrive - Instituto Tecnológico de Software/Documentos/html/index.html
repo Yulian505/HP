@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Código QR</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Librería QRCode.js -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Animación de bienvenida -->
+    <div class="welcome-container">
+        <h1 class="welcome-text">Bienvenido</h1>
+        <p class="subtitle">Espero difrute la experiencia.</p>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content hidden">
+        <h2>Mantenimiento</h2>
+        <p></p>
+        <div id="qrcode-container"></div>
+        <button id="generateQRButton">Generar Código QR</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
