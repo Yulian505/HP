@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-container {
+    text-align: center;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(50px); /* Comienza ligeramente hacia abajo */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Transiciones suaves */
+}
+
+.welcome-container.active {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Vuelve a la posición original */
+}
+
+.welcome-container.hidden {
+    opacity: 0; /* Desaparece después de la animación */
+    transform: translateY(-50px); /* Se mueve hacia arriba */
+    transition: opacity 1s ease, transform 1s ease; /* Transición de salida */
+}
+
+.main-content {
+    text-align: center;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(20px); /* Comienza ligeramente hacia abajo */
+    transition: opacity 1s ease, transform 1s ease; /* Transición suave */
+}
+
+.main-content.visible {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Vuelve a la posición original */
+}
+
+.hidden {
+    display: none; /* Oculta completamente el elemento */
+}
+
+#qrcode-container {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
